@@ -113,6 +113,31 @@
                 flex-wrap: wrap;
             }
 
+            .usage-help-btn {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 0.5px solid var(--border2);
+                background: var(--bg3);
+                color: var(--c-fb-text);
+                font-family: var(--font-mono);
+                font-size: 13px;
+                font-weight: 700;
+                cursor: pointer;
+                box-shadow: 0 0 0 1px rgba(0, 212, 204, 0.04);
+                transition:
+                    border-color 0.15s,
+                    background 0.15s,
+                    transform 0.15s;
+            }
+            .usage-help-btn:hover,
+            .usage-help-btn:focus {
+                border-color: rgba(0, 212, 204, 0.6);
+                background: var(--c-fb-bg);
+                outline: none;
+                transform: translateY(-1px);
+            }
+
             .stat-pill {
                 display: flex;
                 align-items: center;
@@ -201,6 +226,16 @@
             }
             .road-text span {
                 color: var(--c-fb-text);
+            }
+            .road-banner .usage-help-btn {
+                width: 34px;
+                height: 34px;
+                margin-left: 2px;
+                transform: translateY(-2px);
+            }
+            .road-banner .usage-help-btn:hover,
+            .road-banner .usage-help-btn:focus {
+                transform: translateY(-3px);
             }
 
             /* MAIN */
@@ -699,6 +734,110 @@
                 display: flex;
             }
 
+            .usage-overlay {
+                display: none;
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.78);
+                z-index: 260;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+            }
+            .usage-overlay.open {
+                display: flex;
+            }
+
+            .usage-modal {
+                width: min(560px, calc(100vw - 2rem));
+                max-height: calc(100vh - 2rem);
+                overflow: auto;
+                background: var(--bg2);
+                border: 0.5px solid rgba(0, 212, 204, 0.35);
+                border-radius: 10px;
+                box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+            }
+
+            .usage-modal-header {
+                position: sticky;
+                top: 0;
+                z-index: 1;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 1rem;
+                padding: 1.15rem 1.25rem;
+                background: var(--bg2);
+                border-bottom: 0.5px solid var(--border2);
+            }
+            .usage-modal-kicker {
+                font-family: var(--font-mono);
+                font-size: 9px;
+                color: var(--c-fb-text);
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+                margin-bottom: 5px;
+            }
+            .usage-modal-title {
+                font-family: var(--font-mono);
+                font-size: 25px;
+                color: var(--text);
+                line-height: 1;
+            }
+            .usage-close {
+                width: 30px;
+                height: 30px;
+                border: 0;
+                border-radius: 50%;
+                background: var(--bg3);
+                color: var(--muted);
+                font-family: var(--font-mono);
+                font-size: 17px;
+                cursor: pointer;
+            }
+            .usage-close:hover,
+            .usage-close:focus {
+                color: var(--text);
+                outline: 0.5px solid var(--border2);
+            }
+            .usage-content {
+                display: grid;
+                gap: 10px;
+                padding: 1.25rem;
+            }
+            .usage-block {
+                border: 0.5px solid var(--border);
+                border-radius: var(--radius);
+                background: rgba(255, 255, 255, 0.025);
+                padding: 1rem;
+            }
+            .usage-block h4 {
+                margin-bottom: 0.6rem;
+                font-family: var(--font-mono);
+                font-size: 14px;
+                color: var(--c-fb-text);
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+            }
+            .usage-block p,
+            .usage-block li {
+                font-size: 13px;
+                line-height: 1.55;
+                color: var(--muted);
+            }
+            .usage-block ul {
+                margin-top: 0.45rem;
+                padding-left: 1.1rem;
+            }
+            .usage-block li + li {
+                margin-top: 0.35rem;
+            }
+            .usage-block code {
+                color: var(--c-94-text);
+                font-family: var(--font-mono);
+                font-size: 12px;
+            }
+
             .modal {
                 background: var(--bg2);
                 border: 0.5px solid var(--border2);
@@ -1003,6 +1142,14 @@
         <div class="page">
             <div class="road-banner">
                 <span class="road-text">road to <span id="road-dan-name">DELTA</span></span>
+                <button
+                    class="usage-help-btn"
+                    type="button"
+                    onclick="openUsageHelp()"
+                    aria-label="Open usage help"
+                >
+                    ?
+                </button>
             </div>
 
             <div class="load-bar">
@@ -1150,6 +1297,63 @@
                 <div class="modal-footer">
                     <button class="btn-save" onclick="saveModal()">save</button>
                     <button class="btn-cancel" onclick="closeModal()">cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="usage-overlay"
+            id="usage-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="usage-title"
+        >
+            <div class="usage-modal">
+                <div class="usage-modal-header">
+                    <div>
+                        <div class="usage-modal-title" id="usage-title">Usage Guide</div>
+                    </div>
+                    <button
+                        class="usage-close"
+                        type="button"
+                        onclick="closeUsageHelp()"
+                        aria-label="Close usage help"
+                    >
+                        x
+                    </button>
+                </div>
+                <div class="usage-content">
+                    <section class="usage-block">
+                        <h4>1. For adding maps you can either:</h4>
+                        <ul>
+                            <li>
+                                fill the <code>maps.json</code> file with your maps and rates and import it on
+                                the site.
+                            </li>
+                            <li>select square and click the pencil icon to manually edit map info.</li>
+                        </ul>
+                    </section>
+                    <section class="usage-block">
+                        <h4>2. Map progress</h4>
+                        <p>For map progress (94% / S rank etc.) you can either:</p>
+                        <ul>
+                            <li>change progress manually by clicking squares.</li>
+                            <li>
+                                import / export your map progress. Note: progress saves when refreshing the
+                                website, but <strong>can be lost on clearing cookies</strong>.
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="usage-block">
+                        <h4>3. Additional notes</h4>
+                        <ul>
+                            <li>on top right you can change your dan.</li>
+                            <li>
+                                there are pre-made templates on the right side of the grid which you can
+                                download and import.
+                            </li>
+                        </ul>
+                    </section>
                 </div>
             </div>
         </div>
@@ -1617,9 +1821,7 @@
                         entry.rate != null
                             ? `<div class="mi-rate">rate: <span>${entry.rate}x</span></div>`
                             : "";
-                    const danHtml = entry.dan
-                        ? `<div class="mi-dan">${entry.dan}</div>`
-                        : "";
+                    const danHtml = entry.dan ? `<div class="mi-dan">${entry.dan}</div>` : "";
                     infoBox.innerHTML = `
                         <div class="map-info-box">
                             <div class="map-info-header">
@@ -1750,6 +1952,14 @@
                 isFinalBoss = false;
             }
 
+            function openUsageHelp() {
+                document.getElementById("usage-overlay").classList.add("open");
+            }
+
+            function closeUsageHelp() {
+                document.getElementById("usage-overlay").classList.remove("open");
+            }
+
             function pickRank(r) {
                 currentRank = normalizeStatus(r);
                 updateRankBtns();
@@ -1784,8 +1994,14 @@
             document.getElementById("overlay").addEventListener("click", (e) => {
                 if (e.target === document.getElementById("overlay")) closeModal();
             });
+            document.getElementById("usage-overlay").addEventListener("click", (e) => {
+                if (e.target === document.getElementById("usage-overlay")) closeUsageHelp();
+            });
             document.addEventListener("keydown", (e) => {
-                if (e.key === "Escape") closeModal();
+                if (e.key === "Escape") {
+                    closeUsageHelp();
+                    closeModal();
+                }
             });
 
             // Przenieś render() nad warunek, żeby najpierw zbudować siatkę, a potem zmienić tekst statusu
