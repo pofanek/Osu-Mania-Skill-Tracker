@@ -1,72 +1,408 @@
 {
   "jumpstream": [
-    { "id": 1, "name": "Fukashigi no Karte (K@keru Bootleg Remix)", "artist": "nwm", "rate": 1.3, "dan": "delta low" },
-    { "id": 2, "name": "NEVERCRYAGAIN", "artist": "Senua", "rate": 1.15, "dan": "delta low" },
-    { "id": 3, "name": "Image Material", "artist": "Tatsh", "rate": 1.1, "dan": "delta low" },
-    { "id": 4, "name": "Flamewall", "artist": "Camellia", "rate": 1.0, "dan": "delta low" },
-    { "id": 5, "name": "Ange du blanc Pur", "artist": "ke-ji", "rate": 1.6, "dan": "delta mid" },
-    { "id": 6, "name": "Cyber Inductance", "artist": "Dj Sharpnel", "rate": 1.5, "dan": "delta mid" },
-    { "id": 7, "name": "Embraced by the flame", "artist": "UNDEAD CORPORATION", "rate": 1.3, "dan": "delta mid" },
-    { "id": 8, "name": "Faith For Intense Speedcore", "artist": "DJKurara", "rate": 1.0, "dan": "delta high" }
+    {
+      "id": 1,
+      "name": "Fukashigi no Karte (K@keru Bootleg Remix)",
+      "artist": "nwm",
+      "rate": 1.3,
+      "dan": "delta low"
+    },
+    {
+      "id": 2,
+      "name": "NEVERCRYAGAIN",
+      "artist": "Senua",
+      "rate": 1.15,
+      "dan": "delta low"
+    },
+    {
+      "id": 3,
+      "name": "Image Material",
+      "artist": "Tatsh",
+      "rate": 1.1,
+      "dan": "delta low"
+    },
+    {
+      "id": 4,
+      "name": "Flamewall",
+      "artist": "Camellia",
+      "rate": 1,
+      "dan": "delta low"
+    },
+    {
+      "id": 5,
+      "name": "Ange du blanc Pur",
+      "artist": "ke-ji",
+      "rate": 1.6,
+      "dan": "delta mid"
+    },
+    {
+      "id": 6,
+      "name": "Cyber Inductance",
+      "artist": "Dj Sharpnel",
+      "rate": 1.5,
+      "dan": "delta mid"
+    },
+    {
+      "id": 7,
+      "name": "Embraced by the flame",
+      "artist": "UNDEAD CORPORATION",
+      "rate": 1.3,
+      "dan": "delta mid"
+    },
+    {
+      "id": 8,
+      "name": "Faith For Intense Speedcore",
+      "artist": "DJKurara",
+      "rate": 1,
+      "dan": "delta high"
+    }
   ],
   "handstream": [
-    { "id": 9,  "name": "exhausted.wav", "artist": "frailty", "rate": 1.2, "dan": "delta low" },
-    { "id": 10, "name": "Rocking bye", "artist": "Sprinky", "rate": 1.25, "dan": "delta low" },
-    { "id": 11, "name": "Sendan Life", "artist": "Katagiri", "rate": 1.05, "dan": "delta low" },
-    { "id": 12, "name": "little poor me", "artist": "Envy", "rate": 1.24, "dan": "delta low" },
-    { "id": 13, "name": "Ao To Natsu", "artist": "syma", "rate": 1.15, "dan": "delta low/mid" },
-    { "id": 14, "name": "Viyella's Malice", "artist": "laur", "rate": 1.3, "dan": "delta mid" },
-    { "id": 15, "name": "Exitium (tpz Despair remix)", "artist": "laur", "rate": 1.1, "dan": "delta high" },
-    { "id": 16, "name": "Spontaneous Combustion", "artist": "yuzu", "rate": 1.05, "dan": "delta high" }
+    {
+      "id": 9,
+      "name": "exhausted.wav",
+      "artist": "frailty",
+      "rate": 1.2,
+      "dan": "delta low"
+    },
+    {
+      "id": 10,
+      "name": "Rocking bye",
+      "artist": "Sprinky",
+      "rate": 1.25,
+      "dan": "delta low"
+    },
+    {
+      "id": 11,
+      "name": "Sendan Life",
+      "artist": "Katagiri",
+      "rate": 1.05,
+      "dan": "delta low"
+    },
+    {
+      "id": 12,
+      "name": "little poor me",
+      "artist": "Envy",
+      "rate": 1.24,
+      "dan": "delta low"
+    },
+    {
+      "id": 13,
+      "name": "Ao To Natsu",
+      "artist": "syma",
+      "rate": 1.15,
+      "dan": "delta mid"
+    },
+    {
+      "id": 14,
+      "name": "Viyella's Malice",
+      "artist": "laur",
+      "rate": 1.3,
+      "dan": "delta mid"
+    },
+    {
+      "id": 15,
+      "name": "Exitium (tpz Despair remix)",
+      "artist": "laur",
+      "rate": 1.1,
+      "dan": "delta high"
+    },
+    {
+      "id": 16,
+      "name": "Spontaneous Combustion",
+      "artist": "yuzu",
+      "rate": 1.05,
+      "dan": "delta high"
+    }
   ],
   "speed": [
-    { "id": 17, "name": "rainbow road", "artist": "nanobii", "rate": 1.3, "dan": "delta low" },
-    { "id": 18, "name": "Shooting Stars", "artist": "Bag Riders", "rate": 1.6, "dan": "delta low" },
-    { "id": 19, "name": "Hopes and Dreams", "artist": "toby fox", "rate": 1.15, "dan": "delta low" },
-    { "id": 20, "name": "Dimension", "artist": "Creo", "rate": 1.2, "dan": "delta low/mid" },
-    { "id": 21, "name": "dat phonk 1.15", "artist": "KORDHELL", "rate": 1.05, "dan": "delta low/mid" },
-    { "id": 22, "name": "krasavitsa", "artist": "anguish", "rate": 1.05, "dan": "delta mid" },
-    { "id": 23, "name": "blinding lights 1.2", "artist": "bang3r", "rate": 0.95, "dan": "delta mid" },
-    { "id": 24, "name": "makiba", "artist": "ilikexd", "rate": 1.25, "dan": "delta high" }
+    {
+      "id": 17,
+      "name": "rainbow road",
+      "artist": "nanobii",
+      "rate": 1.3,
+      "dan": "delta low"
+    },
+    {
+      "id": 18,
+      "name": "Shooting Stars",
+      "artist": "Bag Riders",
+      "rate": 1.6,
+      "dan": "delta low"
+    },
+    {
+      "id": 19,
+      "name": "Hopes and Dreams",
+      "artist": "toby fox",
+      "rate": 1.15,
+      "dan": "delta low"
+    },
+    {
+      "id": 20,
+      "name": "Dimension",
+      "artist": "Creo",
+      "rate": 1.2,
+      "dan": "delta low/mid"
+    },
+    {
+      "id": 21,
+      "name": "dat phonk 1.15",
+      "artist": "KORDHELL",
+      "rate": 1.05,
+      "dan": "delta low/mid"
+    },
+    {
+      "id": 22,
+      "name": "krasavitsa",
+      "artist": "anguish",
+      "rate": 1.05,
+      "dan": "delta mid"
+    },
+    {
+      "id": 23,
+      "name": "blinding lights 1.2",
+      "artist": "bang3r",
+      "rate": 0.95,
+      "dan": "delta mid"
+    },
+    {
+      "id": 24,
+      "name": "makiba",
+      "artist": "ilikexd",
+      "rate": 1.25,
+      "dan": "delta high"
+    }
   ],
   "chord jack": [
-    { "id": 25, "name": "o pani", "artist": "Grzegorz Hyzy", "rate": 0.9, "dan": "delta low" },
-    { "id": 26, "name": "Call Me Maybe 1.1x", "artist": "ChyaMoile", "rate": 1.2, "dan": "delta low" },
-    { "id": 27, "name": "brace for fricking impact", "artist": "camellia", "rate": 1.05, "dan": "delta low/mid" },
-    { "id": 28, "name": "Tokyo by Night", "artist": "Ena", "rate": 1.3, "dan": "delta mid" },
-    { "id": 29, "name": "murder in my mind", "artist": "Kordhell", "rate": 1.3, "dan": "delta mid" },
-    { "id": 30, "name": "Shoot to kill", "artist": "Kordhell", "rate": 1.1, "dan": "delta mid" },
-    { "id": 31, "name": "moment", "artist": "vierre cloud", "rate": 1.0, "dan": "delta mid" },
-    { "id": 32, "name": "CONTROLLA", "artist": "YARIMOV", "rate": 0.9, "dan": "delta high" }
+    {
+      "id": 25,
+      "name": "o pani",
+      "artist": "Grzegorz Hyzy",
+      "rate": 0.9,
+      "dan": "delta low"
+    },
+    {
+      "id": 26,
+      "name": "Call Me Maybe 1.1x",
+      "artist": "ChyaMoile",
+      "rate": 1.2,
+      "dan": "delta low"
+    },
+    {
+      "id": 27,
+      "name": "brace for fricking impact",
+      "artist": "camellia",
+      "rate": 1.05,
+      "dan": "delta low/mid"
+    },
+    {
+      "id": 28,
+      "name": "Tokyo by Night",
+      "artist": "Ena",
+      "rate": 1.3,
+      "dan": "delta mid"
+    },
+    {
+      "id": 29,
+      "name": "murder in my mind",
+      "artist": "Kordhell",
+      "rate": 1.3,
+      "dan": "delta mid"
+    },
+    {
+      "id": 30,
+      "name": "Shoot to kill",
+      "artist": "Kordhell",
+      "rate": 1.1,
+      "dan": "delta mid"
+    },
+    {
+      "id": 31,
+      "name": "moment",
+      "artist": "vierre cloud",
+      "rate": 1,
+      "dan": "delta mid"
+    },
+    {
+      "id": 32,
+      "name": "CONTROLLA",
+      "artist": "YARIMOV",
+      "rate": 0.9,
+      "dan": "delta high"
+    }
   ],
   "dense chord jack": [
-    { "id": 33, "name": "Untouched 1.4", "artist": "Foco", "rate": 1.05, "dan": "delta low" },
-    { "id": 34, "name": "dat phonk", "artist": "kordhell", "rate": 1.0, "dan": "delta low" },
-    { "id": 35, "name": "shabaka", "artist": "nwm", "rate": 1.0, "dan": "delta low/mid" },
-    { "id": 36, "name": "Barrage", "artist": "halv", "rate": 1.0, "dan": "delta low/mid" },
-    { "id": 37, "name": "Hot N' Cold", "artist": "", "rate": 1.05, "dan": "delta mid" },
-    { "id": 38, "name": "Control 0.93", "artist": "Envy", "rate": 1.05, "dan": "delta mid" },
-    { "id": 39, "name": "PAM!!!", "artist": "carpainter", "rate": 1.15, "dan": "delta mid" },
-    { "id": 40, "name": "Nulklifier", "artist": "YUJI2230", "rate": 1.25, "dan": "delta mid" }
+    {
+      "id": 33,
+      "name": "Untouched 1.4",
+      "artist": "Foco",
+      "rate": 1.05,
+      "dan": "delta low"
+    },
+    {
+      "id": 34,
+      "name": "dat phonk",
+      "artist": "kordhell",
+      "rate": 1,
+      "dan": "delta low"
+    },
+    {
+      "id": 35,
+      "name": "shabaka",
+      "artist": "nwm",
+      "rate": 1,
+      "dan": "delta low/mid"
+    },
+    {
+      "id": 36,
+      "name": "Barrage",
+      "artist": "halv",
+      "rate": 1,
+      "dan": "delta low/mid"
+    },
+    {
+      "id": 37,
+      "name": "Hot N' Cold",
+      "artist": "",
+      "rate": 1.05,
+      "dan": "delta mid"
+    },
+    {
+      "id": 38,
+      "name": "Control 0.93",
+      "artist": "Envy",
+      "rate": 1.05,
+      "dan": "delta mid"
+    },
+    {
+      "id": 39,
+      "name": "PAM!!!",
+      "artist": "carpainter",
+      "rate": 1.15,
+      "dan": "delta mid"
+    },
+    {
+      "id": 40,
+      "name": "Nulklifier",
+      "artist": "YUJI2230",
+      "rate": 1.25,
+      "dan": "delta mid"
+    }
   ],
   "speed jack": [
-    { "id": 41, "name": "geometrical dominator", "artist": "Waterflame", "rate": 1.2, "dan": "delta low" },
-    { "id": 42, "name": "Glitch Street", "artist": "KARUT", "rate": 1.15, "dan": "delta low" },
-    { "id": 43, "name": "lost", "artist": "hkmori", "rate": 1.1, "dan": "delta low" },
-    { "id": 44, "name": "Chocolate Disco", "artist": "Perfume", "rate": 1.5, "dan": "delta low" },
-    { "id": 45, "name": "super anime groove 3d world", "artist": "android52", "rate": 1.5, "dan": "delta mid" },
-    { "id": 46, "name": "Mi Mi Mi", "artist": "SEREBRO", "rate": 1.35, "dan": "delta mid" },
-    { "id": 47, "name": "Can't take my Eyes", "artist": "nwm", "rate": 1.4, "dan": "delta mid/high" },
-    { "id": 48, "name": "Angel of Darkness (cut)", "artist": "Hylotl", "rate": 1.4, "dan": "delta high" }
+    {
+      "id": 41,
+      "name": "geometrical dominator",
+      "artist": "Waterflame",
+      "rate": 1.2,
+      "dan": "delta low"
+    },
+    {
+      "id": 42,
+      "name": "Glitch Street",
+      "artist": "KARUT",
+      "rate": 1.15,
+      "dan": "delta low"
+    },
+    {
+      "id": 43,
+      "name": "lost",
+      "artist": "hkmori",
+      "rate": 1.1,
+      "dan": "delta low"
+    },
+    {
+      "id": 44,
+      "name": "Chocolate Disco",
+      "artist": "Perfume",
+      "rate": 1.5,
+      "dan": "delta low"
+    },
+    {
+      "id": 45,
+      "name": "super anime groove 3d world",
+      "artist": "android52",
+      "rate": 1.5,
+      "dan": "delta mid"
+    },
+    {
+      "id": 46,
+      "name": "Mi Mi Mi",
+      "artist": "SEREBRO",
+      "rate": 1.35,
+      "dan": "delta mid"
+    },
+    {
+      "id": 47,
+      "name": "Can't take my Eyes",
+      "artist": "nwm",
+      "rate": 1.4,
+      "dan": "delta mid/high"
+    },
+    {
+      "id": 48,
+      "name": "Angel of Darkness (cut)",
+      "artist": "Hylotl",
+      "rate": 1.4,
+      "dan": "delta high"
+    }
   ],
   "tech": [
-    { "id": 49, "name": "Matusa Bomber", "artist": "Ska", "rate": 1.1, "dan": "delta low" },
-    { "id": 50, "name": "Frictional Nevada", "artist": "Gekido-", "rate": 1.35, "dan": "delta low" },
-    { "id": 51, "name": "Angel's Salad", "artist": "Katagiri", "rate": 1.2, "dan": "delta mid" },
-    { "id": 52, "name": "Dancer in the Smoke", "artist": "Ska", "rate": 1.1, "dan": "delta mid" },
-    { "id": 53, "name": "Project44", "artist": "Ska", "rate": 1.1, "dan": "delta mid" },
-    { "id": 54, "name": "Nhelv", "artist": "Guilhermeziat", "rate": 1.05, "dan": "delta mid" },
-    { "id": 55, "name": "Illusionary Night", "artist": "ELECTGR", "rate": 1.2, "dan": "delta mid" },
-    { "id": 56, "name": "Paint Like A Rudeboy", "artist": "96-GLASS", "rate": 1.4, "dan": "delta high" }
+    {
+      "id": 49,
+      "name": "Matusa Bomber",
+      "artist": "Ska",
+      "rate": 1.1,
+      "dan": "delta low"
+    },
+    {
+      "id": 50,
+      "name": "Frictional Nevada",
+      "artist": "Gekido-",
+      "rate": 1.35,
+      "dan": "delta low"
+    },
+    {
+      "id": 51,
+      "name": "Angel's Salad",
+      "artist": "Katagiri",
+      "rate": 1.2,
+      "dan": "delta mid"
+    },
+    {
+      "id": 52,
+      "name": "Dancer in the Smoke",
+      "artist": "Ska",
+      "rate": 1.1,
+      "dan": "delta mid"
+    },
+    {
+      "id": 53,
+      "name": "Project44",
+      "artist": "Ska",
+      "rate": 1.1,
+      "dan": "delta mid"
+    },
+    {
+      "id": 54,
+      "name": "Nhelv",
+      "artist": "Guilhermeziat",
+      "rate": 1.05,
+      "dan": "delta mid"
+    },
+    {
+      "id": 55,
+      "name": "Illusionary Night",
+      "artist": "ELECTGR",
+      "rate": 1.2,
+      "dan": "delta mid"
+    },
+    {
+      "id": 56,
+      "name": "Paint Like A Rudeboy",
+      "artist": "96-GLASS",
+      "rate": 1.4,
+      "dan": "delta high"
+    }
   ]
 }
